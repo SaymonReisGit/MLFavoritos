@@ -1,0 +1,10 @@
+<div class="search-container">
+  <input
+    type="text"
+    [(ngModel)]="query"
+    (keyup.enter)="searchProducts()"
+    placeholder="Pesquisar Produtos"
+    query
+  />
+  <button mat-flat-button (click)="searchProducts()">Pesquisar</button>
+</div>

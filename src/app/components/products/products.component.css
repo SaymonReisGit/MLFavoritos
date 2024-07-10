@@ -1,0 +1,20 @@
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  max-width: 400px;
+}
+
+.card-footer {
+  margin: auto;
+  padding: 8px;
+}
+
+.card-action {
+  align-self: flex-end;
+  padding: 16px;
+}

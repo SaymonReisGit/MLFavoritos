@@ -1,0 +1,24 @@
+<div class="products-container">
+  <mat-card class="card" appearance="outlined" *ngFor="let product of products">
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title><a href={{product.permalink}} target="_blank">{{product.title.substring(0, 50)}}</a></mat-card-title>
+        <mat-card-subtitle><h2>R$ {{product.price}}</h2></mat-card-subtitle>
+        <img mat-card-lg-image src={{product.thumbnail}} alt={{product.title}} >
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-footer class="card-footer">
+      <mat-chip-set aria-label="Propriedades">
+        <mat-chip>{{product.condition == 'new'? 'novo': 'usado'}}</mat-chip>
+        <mat-chip>Qtd: {{product.available_quantity}}</mat-chip>
+        <mat-chip>Id: {{product.id}}</mat-chip>
+      </mat-chip-set>
+    </mat-card-footer>
+    <mat-card-actions class="card-action">
+      <button mat-fab aria-label="Favoritar">
+        <mat-icon>favorite</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
