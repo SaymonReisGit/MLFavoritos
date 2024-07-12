@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MlapiService } from '../../services/mlapi.service';
+import { MlapiService } from '../../services/mlFavoritosApi/mlapi.service';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 

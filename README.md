@@ -1,27 +1,47 @@
-# MLFavoritos
+# Favoritos do Mercado Livre
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.7.
+## Descrição do Projeto
 
-## Development server
+O projeto "Favoritos do Mercado Livre" tem como objetivo oferecer uma solução para que usuários do Mercado Livre possam salvar e gerenciar facilmente seus produtos favoritos.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Funcionalidades
 
-## Code scaffolding
+### 1. Bucar Produtos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Consultar:**
+  - O usuário preenche o nome do produto que deja consultar.
 
-## Build
+### 2. Salvar Produtos como Favoritos:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Favoritar:**
+  - Ao clicar no ícone do coração o produto será adicionado aos favoritos.
 
-## Running unit tests
+### 3. Listagem de Favoritos
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Favortios:**
+  - O sistema fornece uma página onde será listado todos os produtos já favoritados.
 
-## Running end-to-end tests
+### 4. Adicionar Observações
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **Observação:**
+  - Cada produto favoritado possuí um campo onde uma observação pode ser adicionada ao produto.
 
-## Further help
+### 6. Visitar Produto
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Visitar:**
+  - Abre uma nova aba no navegador, onde será redirecionada para a página do produto no site Mercado Livre.
+
+### 7. Excluir Favorito
+
+- **Excluir:**
+  - Exclui o produto da listagem de favoritos.
+
+### Como executar 
+
+1. **Executar:**
+    - Criar Imagem Docker: docker build -t mlFav-front-docker .
+    - Executar Docker: docker run -p 5000:5000 mlFav-front-docker
+
+## Autor
+
+Este sistema foi desenvolvido por Saymon Carvalho dos Reis, apresentado como MVP para o curso de Pós-Graduação em Engenharia de Software - PUC Rio.
