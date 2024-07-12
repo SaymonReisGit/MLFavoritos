@@ -36,11 +36,21 @@ O projeto "Favoritos do Mercado Livre" tem como objetivo oferecer uma solução 
 - **Excluir:**
   - Exclui o produto da listagem de favoritos.
 
+## Componente Externo - Mercado Livre API
+
+### 1. Bucar Produtos
+
+- **Consultar:**
+  - O usuário preenche o nome do produto que deja consultar e será exibido 50 dos items mais relevantes encontrados.
+
+
 ### Como executar 
 
 1. **Executar:**
-    - Criar Imagem Docker: docker build -t mlFav-front-docker .
-    - Executar Docker: docker run -p 5000:5000 mlFav-front-docker
+    - Criar Imagem Docker: docker build -t mlfav-front-docker .
+    - Executar Docker: docker run -p 4200:4200 mlfav-front-docker
+
+---
 
 ## Autor
 
